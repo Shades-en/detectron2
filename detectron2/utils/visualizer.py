@@ -1160,11 +1160,11 @@ class Visualizer:
                 color after being jittered. The values in the list are in the [0.0, 1.0] range.
         """
         color = mplc.to_rgb(color)
-        vec = np.random.rand(3)
+        # vec = np.random.rand(3)
         # better to do it in another color space
-        vec = vec / np.linalg.norm(vec) * 0.5
-        res = np.clip(vec + color, 0, 1)
-        return tuple(res)
+        # vec = vec / np.linalg.norm(vec) * 0.5
+        # res = np.clip(vec + color, 0, 1)
+        return tuple(color)
 
     def _create_grayscale_image(self, mask=None):
         """
