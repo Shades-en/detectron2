@@ -392,7 +392,7 @@ class Visualizer:
         Returns:
             output (VisImage): image object with visualizations.
         """
-        boxes = predictions.pred_boxes if predictions.has("pred_boxes") else None
+        boxes = None
         scores = predictions.scores if predictions.has("scores") else None
         classes = predictions.pred_classes.tolist() if predictions.has("pred_classes") else None
         labels = _create_text_labels(classes, scores, self.metadata.get("thing_classes", None))
