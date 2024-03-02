@@ -731,13 +731,13 @@ class Visualizer:
                     * 0.5
                     * self._default_font_size
                 )
-                self.draw_text(
-                    labels[i],
-                    text_pos,
-                    color=lighter_color,
-                    horizontal_alignment=horiz_align,
-                    font_size=font_size,
-                )
+                # self.draw_text(
+                #     labels[i],
+                #     text_pos,
+                #     color=lighter_color,
+                #     horizontal_alignment=horiz_align,
+                #     font_size=font_size,
+                # )
 
         # draw keypoints
         if keypoints is not None:
